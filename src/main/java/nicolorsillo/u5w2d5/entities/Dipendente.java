@@ -32,22 +32,22 @@ public class Dipendente {
     @Column(nullable = false, unique = true)
     private String email;
 
-    @Column(name = "immagine_profilo")
-    private String immagineProfilo;
+    @Column(name = "avatar")
+    private String avatar;
 
     public Dipendente(String nome, String cognome, String username, String email) {
         this.nome = nome;
         this.cognome = cognome;
         this.username = username;
         this.email = email;
-        this.immagineProfilo = null;
+        this.avatar = null;
     }
 
-    public Dipendente(String nome, String cognome, String username, String email, String immagineProfilo) {
+    public Dipendente(String nome, String cognome, String username, String email, String avatar) {
         this.nome = nome;
         this.cognome = cognome;
         this.username = username;
         this.email = email;
-        this.immagineProfilo = immagineProfilo;
+        this.avatar = avatar;
     }
 }

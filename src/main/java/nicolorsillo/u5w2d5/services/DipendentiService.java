@@ -68,7 +68,7 @@ public class DipendentiService {
             String url = (String) result.get("secure_url");
             System.out.println(url);
 
-            dipendente.setImmagineProfilo(url);
+            dipendente.setAvatar(url);
 
             return this.dipendentiRepository.save(dipendente);
 
