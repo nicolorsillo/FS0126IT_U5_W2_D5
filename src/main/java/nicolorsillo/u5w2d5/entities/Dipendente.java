@@ -40,6 +40,7 @@ public class Dipendente {
         this.cognome = cognome;
         this.username = username;
         this.email = email;
+        this.immagineProfilo = null;
     }
 
     public Dipendente(String nome, String cognome, String username, String email, String immagineProfilo) {
